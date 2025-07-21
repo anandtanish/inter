@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Simple E-commerce</title>
+    <title>Thank You - Simple E-commerce</title> <!-- Corrected title -->
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,14 +27,6 @@
             max-width: 90%; /* Responsive width */
             width: 500px;
             text-align: center;
-        }
-        .product-image {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            border-radius: 0.75rem; /* rounded-lg */
-            margin: 0 auto 1.5rem; /* mb-6 */
-            object-fit: cover;
         }
         .btn {
             display: inline-block;
@@ -60,22 +52,10 @@
             color: #1f2937; /* gray-900 */
             margin-bottom: 1.5rem; /* mb-6 */
         }
-        h2 {
-            font-size: 1.875rem; /* text-3xl */
-            font-weight: 600; /* font-semibold */
-            color: #1f2937; /* gray-900 */
-            margin-bottom: 1rem; /* mb-4 */
-        }
         p {
             font-size: 1.125rem; /* text-lg */
             color: #4b5563; /* gray-700 */
             margin-bottom: 1rem; /* mb-4 */
-        }
-        .price {
-            font-size: 1.5rem; /* text-2xl */
-            font-weight: 700; /* font-bold */
-            color: #10b981; /* emerald-500 */
-            margin-bottom: 1.5rem; /* mb-6 */
         }
         @media (max-width: 600px) {
             .page-container {
@@ -84,9 +64,6 @@
             }
             h1 {
                 font-size: 1.75rem; /* text-3xl on small screens */
-            }
-            h2 {
-                font-size: 1.5rem; /* text-2xl on small screens */
             }
             .btn {
                 padding: 0.6rem 1.5rem;
@@ -98,12 +75,11 @@
 <body>
 
     <div class="page-container">
-        <h1>Welcome to Our Store!</h1>
-        <img src="https://placehold.co/200x200/4f46e5/ffffff?text=Awesome+Product" alt="Awesome Product" class="product-image">
-        <h2>Awesome Product Name</h2>
-        <p class="price">$99.99</p>
-        <p>This is an amazing product that you absolutely need in your life. It offers incredible features and benefits!</p>
-        <a href="billing.html" class="btn btn-primary">Buy Now</a>
+        <h1>Thank You for Your Purchase!</h1>
+        <p>Your order has been placed successfully and will be processed shortly.</p>
+        <p>We appreciate your business!</p>
+        <!-- Added "Return to Home" button -->
+        <a href="home.html" class="btn btn-primary">Return to Home</a>
     </div>
 
 </body>
