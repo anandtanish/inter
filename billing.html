@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Simple E-commerce</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .page-container {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* rounded-3xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            padding: 2.5rem; /* p-10 */
+            max-width: 90%; /* Responsive width */
+            width: 500px;
+            text-align: center;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 0.75rem; /* rounded-lg */
+            margin: 0 auto 1.5rem; /* mb-6 */
+            object-fit: cover;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem; /* py-3 px-8 */
+            border-radius: 0.75rem; /* rounded-lg */
+            font-weight: 600; /* font-semibold */
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+        }
+        .btn-primary {
+            background-color: #4f46e5; /* indigo-600 */
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #4338ca; /* indigo-700 */
+            transform: translateY(-2px);
+        }
+        h1 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* gray-900 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        h2 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 600; /* font-semibold */
+            color: #1f2937; /* gray-900 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        p {
+            font-size: 1.125rem; /* text-lg */
+            color: #4b5563; /* gray-700 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .price {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            color: #10b981; /* emerald-500 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        @media (max-width: 600px) {
+            .page-container {
+                padding: 1.5rem;
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.75rem; /* text-3xl on small screens */
+            }
+            h2 {
+                font-size: 1.5rem; /* text-2xl on small screens */
+            }
+            .btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <h1>Welcome to Our Store!</h1>
+        <img src="https://placehold.co/200x200/4f46e5/ffffff?text=Awesome+Product" alt="Awesome Product" class="product-image">
+        <h2>Awesome Product Name</h2>
+        <p class="price">$99.99</p>
+        <p>This is an amazing product that you absolutely need in your life. It offers incredible features and benefits!</p>
+        <a href="billing.html" class="btn btn-primary">Buy Now</a>
+    </div>
+
+</body>
+</html>
